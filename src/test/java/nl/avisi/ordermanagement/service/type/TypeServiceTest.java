@@ -1,4 +1,4 @@
-package nl.avisi.ordermanagement.service.type;
+// package nl.avisi.ordermanagement.service.type;
 
 import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Type;
@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 /**
  * Created by robert on 5/13/16.
  */
-// @RunWith(SpringJUnit4ClassRunner.class)
-// @SpringApplicationConfiguration(classes = OrderManagement.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = OrderManagement.class)
 @WebIntegrationTest
 public class TypeServiceTest {
     @Autowired

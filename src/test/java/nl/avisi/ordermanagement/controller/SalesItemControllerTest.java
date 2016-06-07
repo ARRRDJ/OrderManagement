@@ -30,8 +30,8 @@ import java.util.Map;
 /**
  * Created by robert on 5/11/16.
  */
-// @RunWith(SpringJUnit4ClassRunner.class)
-// @SpringApplicationConfiguration(OrderManagement.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class SalesItemControllerTest extends TestCase {
     //Required to Generate JSON content from Java objects

@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 /**
  * Created by robert on 5/13/16.
  */
-// @RunWith(SpringJUnit4ClassRunner.class)
-// @SpringApplicationConfiguration(classes = OrderManagement.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = OrderManagement.class)
 @WebIntegrationTest
 public class SalesItemServiceTest {
 
