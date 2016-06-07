@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
  * Created by Sam on 18-5-2016.
  */
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(OrderManagement.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class ContactPersonTest {
     @Autowired

@@ -1,7 +1,8 @@
-package nl.avisi.ordermanagement.service.sender;
+package nl.avisi.ordermanagement.service;
 
 import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Sender;
+import nl.avisi.ordermanagement.service.sender.SenderService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,9 +32,6 @@ public class SenderServiceTest {
 
     @Before
     public void SetUp() {
-        // empty collection
-        senderService.deleteAll();
-
         Sender sender1 = new Sender(
                 "avisi1",
                 "email@email.nl",

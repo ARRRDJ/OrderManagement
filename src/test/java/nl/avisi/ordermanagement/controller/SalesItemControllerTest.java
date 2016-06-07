@@ -30,8 +30,8 @@ import java.util.Map;
 /**
  * Created by robert on 5/11/16.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(OrderManagement.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class SalesItemControllerTest extends TestCase {
     //Required to Generate JSON content from Java objects
@@ -165,7 +165,7 @@ public class SalesItemControllerTest extends TestCase {
 
         //Asserting the response of the API.
         String message = apiResponse.get("message").toString();
-        assertEquals("SalesItem Updated successfully", message);
+        assertEquals("SalesItem updated successfully", message);
 
         //Fetching the sales item details directly from the DB to verify the API succeeded in updating the sales item details
         SalesItem salesItemFromDB = salesItemService.findOne(salesItemID);

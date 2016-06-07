@@ -1,7 +1,8 @@
-package nl.avisi.ordermanagement.service.salesItem;
+package nl.avisi.ordermanagement.service;
 
 import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.SalesItem;
+import nl.avisi.ordermanagement.service.salesItem.SalesItemService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,9 +31,6 @@ public class SalesItemServiceTest {
 
     @Before
     public void setUp() {
-//      remove all records
-        salesItemService.deleteAll();
-
         SalesItem salesItem1 = new SalesItem();
         salesItem1.setDescription("description1");
         salesItem1.setName("name1");

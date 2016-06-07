@@ -1,17 +1,20 @@
-package nl.avisi.ordermanagement.service.type;
+package nl.avisi.ordermanagement.service;
 
+import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Type;
+import nl.avisi.ordermanagement.service.type.TypeService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
-import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by robert on 5/13/16.

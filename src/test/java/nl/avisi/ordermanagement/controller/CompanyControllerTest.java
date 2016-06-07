@@ -25,8 +25,8 @@ import java.util.*;
 /**
  * Created by robert on 5/11/16.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(OrderManagement.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class CompanyControllerTest extends TestCase {
     //Required to Generate JSON content from Java objects
@@ -165,7 +165,7 @@ public class CompanyControllerTest extends TestCase {
 
         //Asserting the response of the API.
         String message = apiResponse.get("message").toString();
-        assertEquals("Company Updated successfully", message);
+        assertEquals("Company updated successfully", message);
 
         //Fetching the company details directly from the DB to verify the API succeeded in updating the company details
         Company companyFromDB = companyService.findOne(company1.getId());
