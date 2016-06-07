@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a58f1417-5084-40ce-bbcd-ff7cee68564f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/CompanyControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/CompanyControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/OrderControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/OrderControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/SalesItemControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/SalesItemControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/SenderControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/SenderControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/TaxControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/TaxControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/TypeControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/controller/TypeControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/contactPerson/ContactPersonTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/contactPerson/ContactPersonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/customer/CompanyServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/customer/CompanyServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/salesItem/SalesItemServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/salesItem/SalesItemServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/sender/SenderServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/sender/SenderServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/type/TypeServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/type/TypeServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java" />
     </list>
     <ignored path="OrderManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaxServiceTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaxServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="324">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -128,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TypeServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -166,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/OrderServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/SalesItemServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/SenderServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java" />
       </list>
     </option>
   </component>
@@ -1010,7 +1000,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1465297641959</updated>
-      <workItem from="1465297643762" duration="782000" />
+      <workItem from="1465297643762" duration="1420000" />
     </task>
     <servers />
   </component>
@@ -1020,7 +1010,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="782000" />
+    <option name="totallyTimeSpent" value="1420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1194,18 +1184,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="275">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TypeServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/avisi/ordermanagement/service/TaxServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding />
         </state>
       </provider>

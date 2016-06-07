@@ -1,18 +1,12 @@
 package nl.avisi.ordermanagement.service;
 
-import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Tax;
-import nl.avisi.ordermanagement.domain.Type;
 import nl.avisi.ordermanagement.service.tax.TaxService;
-import nl.avisi.ordermanagement.service.type.TypeService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.WebIntegrationTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
