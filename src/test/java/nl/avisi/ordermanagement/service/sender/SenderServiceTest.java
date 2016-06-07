@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = OrderManagement.class)
-@WebIntegrationTest
+// @SpringApplicationConfiguration(classes = OrderManagement.class)
+// @WebIntegrationTest
 public class SenderServiceTest {
 
     private String id = "2";
