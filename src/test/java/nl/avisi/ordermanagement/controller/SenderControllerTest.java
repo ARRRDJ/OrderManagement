@@ -26,8 +26,8 @@ import java.util.Map;
  * Created by sjors on 5/30/16.
  */
 
-// @RunWith(SpringJUnit4ClassRunner.class)
-// @SpringApplicationConfiguration(OrderManagement.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class SenderControllerTest extends TestCase {
     //Required to Generate JSON content from Java objects
