@@ -25,8 +25,8 @@ import java.util.*;
 /**
  * Created by robert on 5/11/16.
  */
-// @RunWith(SpringJUnit4ClassRunner.class)
-// @SpringApplicationConfiguration(OrderManagement.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(OrderManagement.class)
 @WebIntegrationTest
 public class CompanyControllerTest extends TestCase {
     //Required to Generate JSON content from Java objects
