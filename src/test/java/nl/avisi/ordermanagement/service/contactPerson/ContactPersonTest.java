@@ -49,7 +49,7 @@ public class ContactPersonTest {
     }
 
     @Test
-    public void saveContactPerson() throws Exception {
+    public void testSaveContactPerson() throws Exception {
         ContactPerson contactPerson = new ContactPerson("ABC", "123", "123@mail.nl", "0575757");
         contactPerson.setId("testid2");
         contactPersonService.save(contactPerson);
@@ -60,41 +60,41 @@ public class ContactPersonTest {
     }
 
     @Test
-    public void getContactPersons() throws Exception {
+    public void testGetContactPersons() throws Exception {
         List<ContactPerson> contactPersons = contactPersonService.findAll();
         assertNotNull("failure - Expected to retrieve contact persons", contactPersons);
         assertTrue(contactPersons.size() >= 2);
     }
 
     @Test
-    public void getContactPersonByID() throws Exception {
+    public void testGetContactPersonByID() throws Exception {
         ContactPerson contactPerson = contactPersonService.findOne(id);
         assertNotNull(contactPerson);
     }
 
     @Test
-    public void getContactPersonByFirstName() throws Exception {
+    public void testGetContactPersonByFirstName() throws Exception {
         List<ContactPerson> contactPersons = contactPersonService.findByFirstName("Carlo");
         assertNotNull("Should find customers", contactPersons);
         assertEquals("failure - Expected size", 1, contactPersons.size());
     }
 
     @Test
-    public void getContactPersonByLastName() throws Exception {
+    public void testGetContactPersonByLastName() throws Exception {
         List<ContactPerson> contactPersons = contactPersonService.findByLastName("Tact");
         assertNotNull("Should find customers", contactPersons);
         assertEquals("failure - Expected size", 1, contactPersons.size());
     }
 
     @Test
-    public void getContactPersonByEmail() throws Exception {
+    public void testGetContactPersonByEmail() throws Exception {
         List<ContactPerson> contactPersons = contactPersonService.findByEmail("c@mail.nl");
         assertNotNull("Should find customers", contactPersons);
         assertEquals("failure - Expected size", 1, contactPersons.size());
     }
 
     @Test
-    public void deleteContactPerson() throws Exception {
+    public void testDeleteContactPerson() throws Exception {
         contactPersonService.delete(id);
         ContactPerson contactPerson = contactPersonService.findOne(id);
         assertNull("Expected object to be deleted", contactPerson);

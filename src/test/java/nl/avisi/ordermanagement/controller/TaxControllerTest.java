@@ -42,7 +42,7 @@ public class TaxControllerTest extends TestCase {
     private RestTemplate restTemplate = new TestRestTemplate();
 
     @Test
-    public void createTax() throws Exception {
+    public void testCreateTax() throws Exception {
         //Building the JSON String
         Map<String, Object> requestBody = new HashMap<String, Object>();
         requestBody.put("rate", 21.0);
@@ -74,7 +74,7 @@ public class TaxControllerTest extends TestCase {
     }
 
     @Test
-    public void deleteTax() {
+    public void testDeleteTax() {
         //Create a new product using the TaxService API
         Tax tax = new Tax(21.0);
         taxService.save(tax);
@@ -90,7 +90,7 @@ public class TaxControllerTest extends TestCase {
     }
 
     @Test
-    public void updateTax() throws Exception {
+    public void testUpdateTax() throws Exception {
         //Create a new product using the TaxService API
         Tax tax = new Tax(21.0);
         taxService.save(tax);
@@ -127,7 +127,7 @@ public class TaxControllerTest extends TestCase {
     }
 
     @Test
-    public void showAllTaxes() throws Exception {
+    public void testShowAllTaxes() throws Exception {
         //Create a new product using the TaxService API
         Tax tax1 = new Tax(21.0);
         taxService.save(tax1);
@@ -156,7 +156,7 @@ public class TaxControllerTest extends TestCase {
     }
 
     @Test
-    public void showTax() throws Exception {
+    public void testShowTax() throws Exception {
         //Create a new product using the TaxService API
         Tax tax = new Tax(21.0);
         taxService.save(tax);

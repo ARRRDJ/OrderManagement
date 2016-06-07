@@ -52,7 +52,7 @@ public class SalesItemControllerTest extends TestCase {
     private RestTemplate restTemplate = new TestRestTemplate();
 
     @Test
-    public void createSalesItem() throws Exception {
+    public void testCreateSalesItem() throws Exception {
         Type type = new Type("Goed Type");
         Type savedType = typeService.save(type);
         Tax tax = new Tax(5.5);
@@ -102,7 +102,7 @@ public class SalesItemControllerTest extends TestCase {
     }
 
     @Test
-    public void deleteSalesItem() {
+    public void testDeleteSalesItem() {
         Type type = new Type("Goed Type");
         Type savedType = typeService.save(type);
         Tax tax = new Tax(5.5);
@@ -128,7 +128,7 @@ public class SalesItemControllerTest extends TestCase {
 
     //
     @Test
-    public void updateSalesItem() throws Exception {
+    public void testUpdateSalesItem() throws Exception {
         Type type = new Type("Goed Type");
         Type savedType = typeService.save(type);
         Tax tax = new Tax(5.5);
@@ -184,7 +184,7 @@ public class SalesItemControllerTest extends TestCase {
 
     //
     @Test
-    public void showAllSalesItems() throws Exception {
+    public void testShowAllSalesItems() throws Exception {
         //Add some test data for the API
         Type type1 = new Type("Goed Type");
         Type savedType1 = typeService.save(type1);
@@ -233,7 +233,7 @@ public class SalesItemControllerTest extends TestCase {
 
     //
     @Test
-    public void showSalesItem() throws Exception {
+    public void testShowSalesItem() throws Exception {
         //Add some test data for the API
         Type type = new Type("Goed Type");
         Type savedType = typeService.save(type);
@@ -262,7 +262,7 @@ public class SalesItemControllerTest extends TestCase {
 
     //
     @Test
-    public void getSalesItemByName() throws Exception {
+    public void testGetSalesItemByName() throws Exception {
         //Add some test data for the API
         Type type1 = new Type("Goed Type");
         Type savedType1 = typeService.save(type1);

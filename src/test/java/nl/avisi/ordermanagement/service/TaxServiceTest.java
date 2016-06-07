@@ -41,7 +41,7 @@ public class TaxServiceTest {
     }
 
     @Test
-    public void addTax() throws Exception {
+    public void testAddTax() throws Exception {
         Tax tax3 = new Tax(1.25);
         tax3.setId("3");
         taxService.save(tax3);
@@ -52,20 +52,20 @@ public class TaxServiceTest {
 
 
     @Test
-    public void deleteTax() throws Exception {
+    public void testDeleteTax() throws Exception {
         taxService.delete(id);
         assertNull(taxService.findOne(id));
     }
 
     @Test
-    public void getTaxes() throws Exception {
+    public void testGetTaxes() throws Exception {
         List<Tax> taxes = taxService.findAll();
         assertNotNull("failure - Expected to retrieve taxes", taxes);
         assertTrue(taxes.size() >= 2);
     }
 
     @Test
-    public void getTax() throws Exception {
+    public void testGetTax() throws Exception {
         Tax tax = taxService.findOne(id);
         assertNotNull(tax);
     }

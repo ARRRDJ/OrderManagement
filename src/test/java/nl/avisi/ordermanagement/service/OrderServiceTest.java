@@ -90,7 +90,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void saveOrder() throws Exception {
+    public void testSaveOrder() throws Exception {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();
@@ -126,20 +126,20 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void getOrders() throws Exception {
+    public void testGetOrders() throws Exception {
         List<Order> orders = orderService.findAll();
         assertNotNull("failure - Expected to retrieve orders", orders);
         assertTrue(orders.size() >= 2);
     }
 
     @Test
-    public void getOrderByID() throws Exception {
+    public void testGetOrderByID() throws Exception {
         Order order = orderService.findOne(id);
         assertNotNull(order);
     }
 
     @Test
-    public void getActiveOrders() throws Exception {
+    public void testGetActiveOrders() throws Exception {
         List<Order> orders = orderService.findAllActive();
         assertNotNull("Should find orders", orders);
         assertTrue(orders.size() >= 1);

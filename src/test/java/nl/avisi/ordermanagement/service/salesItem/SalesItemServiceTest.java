@@ -58,7 +58,7 @@ public class SalesItemServiceTest {
     }
 
     @Test
-    public void addProduct() throws Exception {
+    public void testAddProduct() throws Exception {
         SalesItem salesItem3 = new SalesItem();
         salesItem3.setDescription("description3");
         salesItem3.setName("name3");
@@ -72,27 +72,27 @@ public class SalesItemServiceTest {
     }
 
     @Test
-    public void getProducts() throws Exception {
+    public void testGetProducts() throws Exception {
         List<SalesItem> products = salesItemService.findAll();
         assertNotNull("failure - Expected to retrieve products", products);
         assertTrue(products.size() >= 2);
     }
 
     @Test
-    public void getProduct() throws Exception {
+    public void testGetProduct() throws Exception {
         SalesItem salesItem = salesItemService.findOne(id);
         assertNotNull(salesItem);
     }
 
     @Test
-    public void getProductByNameOrDescription() throws Exception {
+    public void testGetProductByNameOrDescription() throws Exception {
         List<SalesItem> salesItems = salesItemService.findByNameOrDescription("name1");
         assertNotNull("Should find salesItems", salesItems);
         assertEquals("failure - Expected size", 1, salesItems.size());
     }
 
     @Test
-    public void deleteProduct() throws Exception {
+    public void testDeleteProduct() throws Exception {
         salesItemService.delete(id);
         SalesItem salesItem = salesItemService.findOne(id);
         assertNull("Expected object to be deleted", salesItem);

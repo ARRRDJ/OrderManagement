@@ -124,7 +124,7 @@ public class OrderControllerTest extends TestCase {
 //    }
 
     @Test
-    public void deleteOrder() {
+    public void testDeleteOrder() {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();
@@ -168,7 +168,7 @@ public class OrderControllerTest extends TestCase {
     }
 
     @Test
-    public void showOrder() throws Exception {
+    public void testShowOrder() throws Exception {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();
@@ -211,7 +211,7 @@ public class OrderControllerTest extends TestCase {
     }
 
     @Test
-    public void showAllOrders() throws Exception {
+    public void testShowAllOrders() throws Exception {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();
@@ -267,7 +267,7 @@ public class OrderControllerTest extends TestCase {
     }
 
     @Test
-    public void getOrderByInvoiceEmail() throws Exception {
+    public void testGetOrderByInvoiceEmail() throws Exception {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();
@@ -313,7 +313,7 @@ public class OrderControllerTest extends TestCase {
     }
 
     @Test
-    public void getOrderByNumber() throws Exception {
+    public void testGetOrderByNumber() throws Exception {
         ContactPerson contactPerson = new ContactPerson("Firstname", "Lastname", "e@mail.com", "06-1234567");
         contactPerson.setId("id");
         List<ContactPerson> cpList = new ArrayList<>();

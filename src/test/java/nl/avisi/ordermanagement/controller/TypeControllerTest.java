@@ -2,21 +2,17 @@ package nl.avisi.ordermanagement.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import junit.framework.TestCase;
-import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Type;
 import nl.avisi.ordermanagement.service.type.TypeService;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
 import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
@@ -48,7 +44,7 @@ public class TypeControllerTest extends TestCase {
     }
 
     @Test
-    public void createType() throws Exception {
+    public void testCreateType() throws Exception {
         //Building the JSON String
         Map<String, Object> requestBody = new HashMap<String, Object>();
         requestBody.put("name", "Type 1");
@@ -82,7 +78,7 @@ public class TypeControllerTest extends TestCase {
     }
 
     @Test
-    public void deleteType() {
+    public void testDeleteType() {
         //Create a new type using the TypeService API
         Type type = new Type("Type 2");
         typeService.save(type);
@@ -98,7 +94,7 @@ public class TypeControllerTest extends TestCase {
     }
 
     @Test
-    public void showAllTypes() throws Exception {
+    public void testShowAllTypes() throws Exception {
         //Add some test data for the API
         Type type1 = new Type("testType 1");
         typeService.save(type1);
@@ -127,7 +123,7 @@ public class TypeControllerTest extends TestCase {
     }
 
     @Test
-    public void showType() throws Exception {
+    public void testShowType() throws Exception {
         //Create a new type using the typeService API
         Type type = new Type("testType");
         typeService.save(type);
@@ -146,7 +142,7 @@ public class TypeControllerTest extends TestCase {
     }
 
     @Test
-    public void updateType() throws Exception {
+    public void testUpdateType() throws Exception {
         //Create a new type using the TypeService API
         Type type = new Type("Type1");
         typeService.save(type);

@@ -44,7 +44,7 @@ public class CompanyControllerTest extends TestCase {
     private RestTemplate restTemplate = new TestRestTemplate();
 
     @Test
-    public void createCompany() throws Exception {
+    public void testCreateCompany() throws Exception {
         ContactPerson contactPerson = new ContactPerson("C.", "Ontact", "me@mail.nl", "06757575");
         ContactPerson contactPerson2 = new ContactPerson("C2.", "Ontact2", "me2@mail.nl", "064738383");
         ContactPerson[] contactPersonsArray = new ContactPerson[]{contactPerson, contactPerson2};
@@ -98,7 +98,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void deleteCompany() {
+    public void testDeleteCompany() {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("P.", "Erson", "em@ail.com", "06383338");
         contactPersonList.add(contactPerson);
@@ -124,7 +124,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void updateCompany() throws Exception {
+    public void testUpdateCompany() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("C.", "Ontact", "oodpsowjjjff@mail.nl", "0260505050");
         contactPersonList.add(contactPerson);
@@ -186,7 +186,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void showAllCompanies() throws Exception {
+    public void testShowAllCompanies() throws Exception {
         //Add some test data for the API
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Sam", "Mas", "mijn@mail.nl", "072747474");
@@ -224,7 +224,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void showCompany() throws Exception {
+    public void testShowCompany() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Iets", "Anders", "abc@123.nl", "06758484");
         contactPersonList.add(contactPerson);
@@ -249,7 +249,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void getCompanyByName() throws Exception {
+    public void testGetCompanyByName() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Pieter", "Contact", "pieter@email.com", "0363373");
         contactPersonList.add(contactPerson);
@@ -282,7 +282,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void getCompanyByEmail() throws Exception {
+    public void testGetCompanyByEmail() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Sam", "Contact", "sam@email.com", "065858534");
         contactPersonList.add(contactPerson);
@@ -315,7 +315,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void getCompanyByZipCode() throws Exception {
+    public void testGetCompanyByZipCode() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Sjors", "Contact", "sjors@email.com", "06748484");
         contactPersonList.add(contactPerson);
@@ -348,7 +348,7 @@ public class CompanyControllerTest extends TestCase {
     }
 
     @Test
-    public void getCompanyByCity() throws Exception {
+    public void testGetCompanyByCity() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("Robert", "Contact", "robert@email.com", "03636363");
         contactPersonList.add(contactPerson);

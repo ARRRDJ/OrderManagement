@@ -42,7 +42,7 @@ public class TypeServiceTest {
     }
 
     @Test
-    public void addType() throws Exception {
+    public void testAddType() throws Exception {
         Type type3 = new Type("type3");
         type3.setId("3");
         typeService.save(type3);
@@ -53,20 +53,20 @@ public class TypeServiceTest {
 
 
     @Test
-    public void deleteType() throws Exception {
+    public void testDeleteType() throws Exception {
         typeService.delete(id);
         assertNull(typeService.findOne(id));
     }
 
     @Test
-    public void getTypes() throws Exception {
+    public void testGetTypes() throws Exception {
         List<Type> types = typeService.findAll();
         assertNotNull("failure - Expected to retrieve types", types);
         assertTrue(types.size() >= 2);
     }
 
     @Test
-    public void getType() throws Exception {
+    public void testGetType() throws Exception {
         Type type = typeService.findOne(id);
         assertNotNull(type);
     }

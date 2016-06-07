@@ -64,7 +64,7 @@ public class CompanyServiceTest {
     }
 
     @Test
-    public void saveCompany() throws Exception {
+    public void testSaveCompany() throws Exception {
         List<ContactPerson> contactPersonList = new ArrayList<ContactPerson>();
         ContactPerson contactPerson = new ContactPerson("ABC", "123", "123@mail.nl", "032959595");
         contactPersonList.add(contactPerson);
@@ -85,62 +85,62 @@ public class CompanyServiceTest {
     }
 
     @Test
-    public void getCompanies() throws Exception {
+    public void testGetCompanies() throws Exception {
         List<Company> companies = companyService.findAll();
         assertNotNull("failure - Expected to retrieve products", companies);
         assertTrue(companies.size() >= 2);
     }
 
     @Test
-    public void getCompanyByID() throws Exception {
+    public void testGetCompanyByID() throws Exception {
         Company company = companyService.findOne(id);
         assertNotNull(company);
     }
 
     @Test
-    public void getCompanyByCompanyName() throws Exception {
+    public void testGetCompanyByCompanyName() throws Exception {
         List<Company> companies = companyService.findByName("Test");
         assertNotNull("Should find companies", companies);
         assertEquals("failure - Expected size", 1, companies.size());
     }
 
     @Test
-    public void getCompanyByZipCode() throws Exception {
+    public void testGetCompanyByZipCode() throws Exception {
         List<Company> companies = companyService.findByZipCode("6574YE");
         assertNotNull("Should find companies", companies);
         assertEquals("failure - Expected size", 1, companies.size());
     }
 
     @Test
-    public void getCompanyByCity() throws Exception {
+    public void testGetCompanyByCity() throws Exception {
         List<Company> companies = companyService.findByCity("Arnhem");
         assertNotNull("Should find companies", companies);
         assertEquals("failure - Expected size", 1, companies.size());
     }
 
     @Test
-    public void getCompanyByEmail() throws Exception {
+    public void testGetCompanyByEmail() throws Exception {
         List<Company> companies = companyService.findByEmail("mail@me.nl");
         assertNotNull("Should find companies", companies);
         assertEquals("failure - Expected size", 1, companies.size());
     }
 
     @Test
-    public void getCompanyByAddress() throws Exception {
+    public void testGetCompanyByAddress() throws Exception {
         List<Company> companies = companyService.findByAddress("De Straatlaan 15");
         assertNotNull("Should find companies", companies);
         assertEquals("failure - Expected size", 1, companies.size());
     }
 
     @Test
-    public void getCompanyContactPerson() throws Exception {
+    public void testGetCompanyContactPerson() throws Exception {
         Company company = companyService.findOne(id);
         List<ContactPerson> contactPersonList = company.getContactPersons();
         assertNotNull("Should find a contact person", contactPersonList);
     }
 
     @Test
-    public void deleteCompany() throws Exception {
+    public void testDeleteCompany() throws Exception {
         companyService.delete(id);
         Company company = companyService.findOne(id);
         assertNull("Expected object to be deleted", company);

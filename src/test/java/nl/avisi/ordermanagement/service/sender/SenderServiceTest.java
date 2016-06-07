@@ -66,7 +66,7 @@ public class SenderServiceTest {
     }
 
     @Test
-    public void create() {
+    public void testCreate() {
         Sender sender = new Sender(
                 "avisi3",
                 "email@email.nl",
@@ -89,20 +89,20 @@ public class SenderServiceTest {
     }
 
     @Test
-    public void getSenders() throws Exception {
+    public void testGetSenders() throws Exception {
         List<Sender> senders = senderService.findAll();
         assertNotNull("failure - Expected to retrieve types", senders);
         assertTrue(senders.size() >= 2);
     }
 
     @Test
-    public void getSender() throws Exception {
+    public void testGetSender() throws Exception {
         Sender sender = senderService.findOne(id);
         assertNotNull(sender);
     }
 
     @Test
-    public void delete() {
+    public void testDelete() {
         senderService.delete(id);
         assertNull(senderService.findOne(id));
     }

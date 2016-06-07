@@ -40,7 +40,7 @@ public class SenderControllerTest extends TestCase {
     private RestTemplate restTemplate = new TestRestTemplate();
 
     @Test
-    public void createSender() throws Exception {
+    public void testCreateSender() throws Exception {
         //Building the JSON String
         Map<String, Object> requestBody = new HashMap<String, Object>();
         requestBody.put("name", "avisi5");
@@ -82,7 +82,7 @@ public class SenderControllerTest extends TestCase {
     }
 
     @Test
-    public void deleteSender() {
+    public void testDeleteSender() {
         //Create a new product using the CompanyService API
         Sender sender = new Sender(
                 "avisiTest",
@@ -110,7 +110,7 @@ public class SenderControllerTest extends TestCase {
     }
 
     @Test
-    public void showAllSender() {
+    public void testShowAllSender() {
         //Create new products using the CompanyService API
         Sender sender1 = new Sender(
                 "avisiTest1",
@@ -159,7 +159,7 @@ public class SenderControllerTest extends TestCase {
     }
 
     @Test
-    public void showSender() {
+    public void testShowSender() {
         //Create a new product using the CompanyService API
         Sender sender = new Sender(
                 "avisiTest1",
