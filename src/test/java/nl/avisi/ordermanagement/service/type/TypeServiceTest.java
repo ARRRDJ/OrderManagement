@@ -1,4 +1,4 @@
-// package nl.avisi.ordermanagement.service.type;
+package nl.avisi.ordermanagement.service.type;
 
 import nl.avisi.ordermanagement.OrderManagement;
 import nl.avisi.ordermanagement.domain.Type;
@@ -13,7 +13,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by robert on 5/13/16.
